@@ -1,0 +1,217 @@
+body {
+   display: grid;
+	grid-template-columns: 1fr 1fr; /*hoe meer je fr naast elkaar zet hoe meer columns je naast elkaar krijgt*/
+	height: 500px;
+	grid-row-gap: 10px; /*(top bottom)*/
+	grid-column-gap: 10px; /*(Left Right)*/
+
+	grid-template-areas: 
+		"title title"
+		"svt svt"
+		"gravity pressure"
+		"empty empty"
+		"empty empty"
+		"food food"
+		"person person"
+		"person person"		
+		"flying flying"
+		"something something"
+
+	;
+}
+
+h1 {
+    font-size: 1.1em;
+    margin: 1%;
+    color: white;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+table {
+    font-size: 0.75em;
+}
+
+p {
+    font-size: 0.75em;
+}
+
+.box1 {
+	grid-area: title;
+    padding: 0;
+    border: none;
+}
+
+.box2 {
+	grid-area: svt;
+}
+
+.box3 {
+	grid-area: food;
+}
+
+.box4 {
+    grid-area: flying;
+}
+
+.box5 {
+    grid-area: person;
+}
+.box6 {
+    grid-area: gravity;
+    text-align: center;
+    
+}
+
+.box7 {
+    grid-area: pressure;
+    text-align: center;
+}
+.box8 {
+    grid-area: something;
+    text-align: center;
+    display: none;
+}
+
+.box9 {
+    grid-area: empty;
+    background-image: url('../images/spacex-raket.png');
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 680px){
+body {
+   display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr; /*hoe meer je fr naast elkaar zet hoe meer columns je naast elkaar krijgt*/
+	height: 500px;
+	grid-row-gap: 10px; /*(top bottom)*/
+	grid-column-gap: 10px; /*(Left Right)*/
+
+	grid-template-areas: 
+		"title title title title"
+		"svt svt svt gravity"
+		"svt svt svt pressure"
+		"empty empty empty empty"
+		"food food flying flying"
+		"person person person person"
+		"person person person person"
+		
+		
+
+	   ;
+    }
+
+h1 {
+    font-size: 1.5em;      
+    }
+
+h2 {
+    font-size: 1.3em;
+}
+
+table {
+    font-size: 1em;
+}
+
+p {
+    font-size: 1em;
+}
+    
+}
+
+
+@media only screen and (min-width: 990px){
+body {
+   display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*hoe meer je fr naast elkaar zet hoe meer columns je naast elkaar krijgt*/
+	height: 500px;
+	grid-row-gap: 10px; /*(top bottom)*/
+	grid-column-gap: 10px; /*(Left Right)*/
+
+	grid-template-areas: 
+		"title title title title title title"
+		"svt svt food food flying flying"
+		"person person person gravity pressure something"
+		"person person person empty empty empty"
+		"person person person empty empty empty"
+
+	   ;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    .box8 {
+     display: initial;
+    }
+    
+    h2 {
+     font-size: 1.5em;
+    }
+
+    table {
+     font-size: 1em;
+    }
+
+    p {
+     font-size: 1em;
+    }
+    .box1 img {
+        max-width: 300px;
+    }
+}
+
+
+@media only screen and (min-width: 1366px){
+body {
+   display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /*hoe meer je fr naast elkaar zet hoe meer columns je naast elkaar krijgt*/
+	height: 500px;
+	grid-row-gap: 10px; /*(top bottom)*/
+	grid-column-gap: 10px; /*(Left Right)*/
+
+	grid-template-areas: 
+		"title title title title title title title"
+		"svt svt gravity empty empty empty empty"
+		"svt svt pressure empty empty empty empty"
+		"svt svt something empty empty empty empty"
+		"flying flying   person person person food food"
+		"flying flying  person person person food food"
+		"flying flying   person person person food food"
+
+	   ;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+     font-size: 1.5em;
+    }
+
+    table {
+     font-size: 1em;
+    }
+
+    p {
+     font-size: 1em;
+    }
+    
+    .box1 img {
+        max-width: 300px;
+    }
+    
+    .box4 {
+        padding-top: 15%;
+    }
+}
